@@ -6,21 +6,35 @@
 
     div
 </div>
-<input type="text" [(ngModel)]="kolor" ><br>
+<input type="text" [(ngModel)]="kolor"><br>
 <input type="text" #t>
 <input type="submit" (click)="changeColor(t.value)">
-
-<div *ngFor="let p of listProdcut">
-{{p.id}}
-{{p.title}}
-{{p.price}}
-{{p.quantity}}
+<input type="number" [(ngModel)]="search"><br>
+<div *ngFor="let p of listProdcut; let i=index">
+    <div *ngIf="search>p.price || search==null">
+        {{p.id}}
+        {{p.title}}
+        {{p.price}}
+        {{p.quantity}}
+        {{p.like}}
+   
+    <!--
 <div *ngIf="p.quantity==0">
 <input type="submit" value="buy" [disabled]="true">
 </div>
 <div *ngIf="p.quantity!=0">
     <input type="submit" value="buy" [disabled]="false">
     </div>
-
+-->
+    <div *ngIf="j===i">
+        {{d.id}}
+        {{d.title}}
+        {{d.price}}
+        {{d.quantity}}
+        {{d.like}}
+    </div>
     <input type="submit" value="buy" [disabled]="p.quantity==0">
+    <input type="submit" value="like" (click)="increaseLike(i)">
+    <input type="submit" value="detail" (click)="detail(i)">
+</div>
 </div>
