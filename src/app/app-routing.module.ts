@@ -4,10 +4,12 @@ import { TestComponent } from './test/test.component';
 import { FirstComponent } from './first/first.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { LoginComponent } from './login/login.component';
+import { DetailProductComponent } from './detail-product/detail-product.component';
 
 const r: Routes = [
   {path:'',redirectTo:'login',pathMatch:'full'},
   {path:'login',component:LoginComponent},
+  {path:'detail/:idt',component:DetailProductComponent},
   {path:'test',component:TestComponent},
   {path:'first',component:FirstComponent},
   {path:'**',component:NotfoundComponent}
