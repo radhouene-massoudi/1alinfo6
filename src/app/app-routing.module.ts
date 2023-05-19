@@ -6,10 +6,14 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { LoginComponent } from './login/login.component';
 import { DetailProductComponent } from './detail-product/detail-product.component';
 import { AddProductComponent } from './add-product/add-product.component';
+import { AddoffreComponent } from './addoffre/addoffre.component';
+import { ListoffreComponent } from './listoffre/listoffre.component';
 
 const r: Routes = [
   {path:'',redirectTo:'login',pathMatch:'full'},
   {path:'login',component:LoginComponent},
+  {path:'list',component:ListoffreComponent},
+  {path:'addOffre',component:AddoffreComponent},
   {path:'detail/:idt',component:DetailProductComponent},
   {path:'test',component:TestComponent},
   {path:'add',component:AddProductComponent},

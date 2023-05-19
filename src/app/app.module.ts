@@ -12,6 +12,8 @@ import { NavComponent } from './nav/nav.component';
 import { DetailProductComponent } from './detail-product/detail-product.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AddoffreComponent } from './addoffre/addoffre.component';
+import { ListoffreComponent } from './listoffre/listoffre.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,9 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     NavComponent,
     DetailProductComponent,
-    AddProductComponent
+    AddProductComponent,
+    AddoffreComponent,
+    ListoffreComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,27 @@
+<form #f="ngForm">
+<label>titre</label>
+<input type="text" name="title" ngModel required minlength="3" pattern="[a-zA-Z]*" #titre="ngModel">
+<div *ngIf="titre.invalid && titre.touched">
+<span *ngIf="titre.errors?.['required']">
+required
+</span>
+<span *ngIf="titre.errors?.['minlength']">
+    minlength
+    </span>
+    <span *ngIf="titre.errors?.['pattern']">
+        PATTERN
+        </span>
+</div>
+<label>company</label>
+<input type="text" name="company" ngModel>
+<label>description</label>
+<input type="text" name="description" ngModel>
+<label>nbCandidate</label>
+<input type="text" name="nbCandidate" ngModel pattern="[0-9]*" #nb="ngModel">
+    <span *ngIf="nb.invalid && nb.touched">
+        pattern
+    </span>
+
+<input type="submit" value="save" (click)="save(f.value)">
+
+</form>
