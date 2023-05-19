@@ -19,6 +19,6 @@ required
     </div>
     <label>quantity</label>
     <input type="text" name="quantity" ngModel>
-    <input type="submit" value="save" (click)="showF(t)" [disabled]="f.invalid">
+    <input type="submit" value="save" (click)="save(f.value)" >
 
 </form>

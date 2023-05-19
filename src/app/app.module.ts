@@ -11,7 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { NavComponent } from './nav/nav.component';
 import { DetailProductComponent } from './detail-product/detail-product.component';
 import { AddProductComponent } from './add-product/add-product.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +26,8 @@ import { AddProductComponent } from './add-product/add-product.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
