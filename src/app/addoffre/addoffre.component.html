@@ -1,6 +1,6 @@
 <form #f="ngForm">
 <label>titre</label>
-<input type="text" name="title" ngModel required minlength="3" pattern="[a-zA-Z]*" #titre="ngModel">
+<input type="text" name="title" ngModel required minlength="3" pattern="[a-zA-Z]*" #titre="ngModel" >
 <div *ngIf="titre.invalid && titre.touched">
 <span *ngIf="titre.errors?.['required']">
 required
@@ -13,7 +13,7 @@ required
         </span>
 </div>
 <label>company</label>
-<input type="text" name="company" ngModel>
+<input type="text" name="company" ngModel >
 <label>description</label>
 <input type="text" name="description" ngModel>
 <label>nbCandidate</label>

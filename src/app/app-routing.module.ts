@@ -8,6 +8,8 @@ import { DetailProductComponent } from './detail-product/detail-product.componen
 import { AddProductComponent } from './add-product/add-product.component';
 import { AddoffreComponent } from './addoffre/addoffre.component';
 import { ListoffreComponent } from './listoffre/listoffre.component';
+import { RemoveoffreComponent } from './removeoffre/removeoffre.component';
+import { UpdateoffreComponent } from './updateoffre/updateoffre.component';
 
 const r: Routes = [
   {path:'',redirectTo:'login',pathMatch:'full'},
@@ -15,6 +17,8 @@ const r: Routes = [
   {path:'list',component:ListoffreComponent},
   {path:'addOffre',component:AddoffreComponent},
   {path:'detail/:idt',component:DetailProductComponent},
+  {path:'remove/:idt',component:RemoveoffreComponent},
+  {path:'update/:id',component:UpdateoffreComponent},
   {path:'test',component:TestComponent},
   {path:'add',component:AddProductComponent},
   {path:'first',component:FirstComponent},

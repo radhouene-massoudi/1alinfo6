@@ -16,4 +16,13 @@ return this.http.post<Offre>('http://localhost:3000/offre',data)
  fetchOffre():Observable<Offre[]>{
  return this.http.get<Offre[]>('http://localhost:3000/offre')
  }
+ removeOffre(id:any){
+  return this.http.delete<Offre>('http://localhost:3000/offre/'+id)
+ }
+ getOffreById(id:any):Observable<Offre>{
+  return this.http.get<Offre>('http://localhost:3000/offre/'+id)
+ }
+ updateOffre(data:Offre,id:any):Observable<Offre>{
+  return this.http.put<Offre>('http://localhost:3000/offre/'+id,data)
+    }
 }

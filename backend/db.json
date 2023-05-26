@@ -39,32 +39,18 @@
   ],
   "offre": [
     {
-      "title": "Doloribus",
-      "company": "Vincent and Irwin Inc",
-      "description": "Vel id nemo ea ipsa",
-      "nbCandidate": "222",
+      "title": "esprit",
+      "company": "esprit",
+      "description": "esprit",
+      "nbCandidate": "99",
       "id": 1
     },
     {
-      "title": "Officia",
-      "company": "Parker Cooper LLC",
-      "description": "Perspiciatis rerum ",
-      "nbCandidate": "7777",
-      "id": 2
-    },
-    {
-      "title": "Et quibusdam do irur",
-      "company": "Kelly and Hancock Plc",
-      "description": "Illum proident et ",
-      "nbCandidate": "99",
-      "id": 3
-    },
-    {
-      "title": "Officia eos dignissi",
-      "company": "Sullivan Browning Trading",
-      "description": "Eum earum minima ear",
-      "nbCandidate": "99",
-      "id": 4
+      "title": "test",
+      "company": "test",
+      "description": "test",
+      "nbCandidate": "88",
+      "id": 6
     }
   ]
 }

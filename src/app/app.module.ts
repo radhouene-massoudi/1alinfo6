@@ -14,6 +14,9 @@ import { AddProductComponent } from './add-product/add-product.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AddoffreComponent } from './addoffre/addoffre.component';
 import { ListoffreComponent } from './listoffre/listoffre.component';
+import { RemoveoffreComponent } from './removeoffre/removeoffre.component';
+import { DetailoffreComponent } from './detailoffre/detailoffre.component';
+import { UpdateoffreComponent } from './updateoffre/updateoffre.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +28,10 @@ import { ListoffreComponent } from './listoffre/listoffre.component';
     DetailProductComponent,
     AddProductComponent,
     AddoffreComponent,
-    ListoffreComponent
+    ListoffreComponent,
+    RemoveoffreComponent,
+    DetailoffreComponent,
+    UpdateoffreComponent
   ],
   imports: [
     BrowserModule,
